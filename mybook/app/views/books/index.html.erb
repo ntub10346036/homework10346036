@@ -1,0 +1,22 @@
+<h1>書本列表</h1>
+<%= link_to "新增書本", new_book_path %>
+  <table>
+    <thead>
+      <tr>
+        <td>書本名稱</td>
+        <td>簡介</td>
+        <td>作者姓名</td>
+        <td>售價</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.indroduction %></td>
+        <td><%= book.author %></td>
+        <td><%= book.price %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
