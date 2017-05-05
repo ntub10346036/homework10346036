@@ -1,0 +1,18 @@
+<h1>書本名稱:　<%= display_name(@book) %></h1>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <td>簡介: </td>
+        <td>作者姓名: </td>
+        <td>售價: </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @book.indroduction %></td>
+        <td><%= @book.author %></td>
+        <td><%= @book.price %></td>
+      </tr>
+    </tbody>
+ <br />
+<%= link_to "回到書本列表", books_path, class: "btn btn-success btn"  %>

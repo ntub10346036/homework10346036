@@ -12,7 +12,7 @@
     <tbody>
       <% @books.each do |book| %>
       <tr>
-        <td><%= book.title %></td>
+        <td><%= link_to display_name(book) , book %></td>
         <td><%= book.indroduction %></td>
         <td><%= book.author %></td>
         <td><%= book.price %></td>
