@@ -1,0 +1,15 @@
+<%= form_for(book) do |f| %>
+    <%= f.label :title, "書本名稱" %>
+    <%= f.text_field :title %> <br />
+
+    <%= f.label :indroduction, "簡介" %>
+    <%= f.text_area :indroduction %> <br />
+
+    <%= f.label :author, "作者" %>
+    <%= f.text_field :author %> <br />
+
+    <%= f.label :price, "售價" %>
+    <%= f.text_field :price %> <br />
+
+    <%= f.submit %>
+  <% end %>
